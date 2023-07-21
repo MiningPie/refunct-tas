@@ -433,7 +433,7 @@ pub fn init() {
                 "BP_Jumppad2_530" => 24,
                 "BP_Jumppad_414" if pad.absolute_location().0 == 2075. => 24,
                 "BP_Jumppad_514" => 26,
-                name => unreachable!("Invalid pipe: {name:?}"),
+                name => unreachable!("Invalid springpad: {name:?}"),
             };
             levels[level_index].springpads.push(scope.object_index(pad));
         }
